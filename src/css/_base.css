@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote {
+  @apply max-w-prose;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  @apply font-bold;
+}
+
+h1, .h1 {
+  @apply text-3xl;
+}
+
+h2, .h2 {
+  @apply text-2xl;
+}
+
+h3, .h3 {
+  @apply text-xl;
+}
+
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  @apply text-lg;
+}
+
+blockquote,
+.blockquote {
+  @apply text-md;
+}
+
+blockquote {
+  @apply border-none;
+}
+
+.blockquote {
+  @apply italic;
+}
+
+.decorated-headline {
+  @apply flex items-center;
+}
+
+.decorated-headline.centered {
+  @apply flex-col-reverse;
+}
+
+.decorated-headline:after {
+  @apply bg-contain bg-center bg-no-repeat h-[0.3em] w-[1em];
+
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTMiIGhlaWdodD0iMTEiIHZpZXdCb3g9IjAgMCA1MyAxMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQzLjkwODYgMEwzNC43NTAzIDkuMDAyNUwyNS41ODY0IDBMMTYuNDI4MSA5LjAwMjVMNy4yNjk4MSAwTDAuMDA1NTc2MTggNy4xNDI1N0wwIDkuMTQ1NThMNy4yNjk4MSAxLjk5NzVMMTYuNDI4MSAxMUwyNS41ODY0IDEuOTk3NUwzNC43NTAzIDExTDQzLjkwODYgMS45OTc1TDUxLjk5MTcgOS45Mzc5N0w1MyA4LjkzMDk3TDQzLjkwODYgMFoiIGZpbGw9IiM3RUFEQUYiLz4KPC9zdmc+Cg==");
+  content: '';
+}
+
+.decorated-headline.centered:after {
+  @apply mb-[0.5em];
+}
