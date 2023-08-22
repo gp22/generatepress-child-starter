@@ -1,6 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/prepros,macos,node
 # Edit at https://www.toptal.com/developers/gitignore?templates=prepros,macos,node
 
+# Compiled files
+assets/
+
 ### macOS ###
 # General
 .DS_Store
